@@ -1,0 +1,20 @@
+1. Switch Expressions (Standard) - JEP 361
+What: Allows switch to return values.
+Benefit: Makes code cleaner and eliminates the need for break statements.
+--------------------------------------------------------------------------------------------------------------------
+2. Pattern Matching for instanceof (Preview) - JEP 305
+What: Simplifies type checks and casting in one step.
+Benefit: Reduces boilerplate code and enhances readability.
+--------------------------------------------------------------------------------------------------------------------
+3. Helpful NullPointerExceptions - JEP 358
+What: Provides more informative messages when a NullPointerException occurs.
+Benefit: Helps developers quickly identify which variable was null, improving debugging.
+--------------------------------------------------------------------------------------------------------------------
+4. Records (Preview) - JEP 359
+What: A new way to define immutable data classes.
+Benefit: Reduces boilerplate code by automatically generating methods like equals(), hashCode(), and toString().
+--------------------------------------------------------------------------------------------------------------------
+5. Text Blocks (Second Preview) - JEP 368
+What: Multi-line string literals that preserve formatting.
+Benefit: Makes it easier to work with long strings, such as SQL queries or JSON, without worrying about
+escape sequences.

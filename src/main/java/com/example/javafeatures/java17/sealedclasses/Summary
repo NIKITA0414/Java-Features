@@ -1,0 +1,21 @@
+*Sealed Classes*
+Purpose: Sealed classes allow developers to define a restricted set of subclasses,
+improving the expressiveness of the type system and making code more maintainable and predictable.
+
+Modifiers: A class or interface can be declared as sealed, non-sealed, or permits:
+
+Sealed: Indicates that the class can only be extended by a specific set of subclasses.
+Non-Sealed: Allows a subclass to be extended further without restriction.
+Permits: Specifies which classes are allowed to extend the sealed class.
+Benefits:
+-Improved control over inheritance.
+-More predictable behavior in polymorphic code.
+-Enhanced readability and maintainability of code.
+
+-Sealed Class: Shape is declared as a sealed class and can only be extended by Circle and Rectangle.
+
+-Permitted Subclasses: Circle and Rectangle are both final subclasses of Shape. Being final means they cannot be extended further.
+
+-Non-Sealed Subclass: Triangle is declared as non-sealed, allowing it to be extended by other classes if needed.
+
+-Method Implementation: Each shape class implements the area() method, allowing for polymorphic behavior when calculating the area.

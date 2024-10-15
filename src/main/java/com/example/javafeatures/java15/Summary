@@ -1,0 +1,4 @@
+stripIndent(): Removes incidental whitespace from each line in a string.
+translateEscapes(): Converts escape sequences into their corresponding characters.
+isEmpty(): Checks if a CharSequence is empty.
+formatted(): Provides a more readable way to format strings using placeholders.

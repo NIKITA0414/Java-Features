@@ -1,0 +1,12 @@
+*Private methods in Interfaces*
+
+Summary: Java 9 introduced private methods in interfaces, allowing common code to be shared
+between default methods without exposing that code to implementing classes.
+This enhances code organization and reduces duplication.
+
+-Private Method: The formatMessage method is defined as private within the interface,
+allowing it to be used by the default method without being accessible outside.
+-Default Method: The printMessage method calls the private formatMessage to format the message before printing.
+-Implementation: The MyClass implements the interface but does not need to override the default method.
+ When called, it uses the private method for formatting.
+

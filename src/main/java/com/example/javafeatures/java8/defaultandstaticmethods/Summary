@@ -1,0 +1,6 @@
+*Default and Static methods in Interfaces*
+
+-Default Method: display() provides a default implementation.
+It can be overridden in implementing classes, as seen in MyClass.
+-Static Method: staticMethod() is called directly on the interface, not on an instance,
+demonstrating how static methods work in interfaces.

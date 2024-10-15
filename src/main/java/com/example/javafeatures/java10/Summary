@@ -1,0 +1,15 @@
+1. Local Variable Type Inference (JEP 286)
+Summary: Use var to declare local variables, allowing the compiler to infer their type, which enhances
+code readability and reduces verbosity.
+
+2. Immutable Collections / Unmodifiable Collections
+Summary: Create unmodifiable collections to prevent changes after creation, promoting data integrity
+and safer programming practices.
+
+3. Optional.orElseThrow() Improvements
+Summary: Optional.orElseThrow() allows for custom exceptions when an Optional is empty, improving
+error handling and code clarity.
+
+4. Root Certificates (JEP 319)
+Summary: Enhances the Java API for managing root certificates, simplifying secure SSL/TLS
+connection establishment and improving certificate validation.

@@ -1,0 +1,30 @@
+*Day Period Support (JDK-8247781)*
+LocalTime Creation: We create a LocalTime instance by parsing a time string.
+
+DateTimeFormatter: We define a DateTimeFormatter with the pattern "h B",
+                    where "h" represents the hour (1-12) and "B" provides the period of the day.
+
+Formatting: We format the LocalTime instance using the formatter,
+            which converts the time into a more descriptive string.
+
+Output: Finally, we print the formatted time. For the example given, it would output "3 in the afternoon".
+
+--------------------------------------------------------------------------------------------------------------------
+*Add Stream.toList Method (JDK-8180352)*
+Input Data: We create a list of strings that represent integers.
+
+Old Approach: We convert the strings to integers using the traditional approach with Collectors.toList(). This involves mapping each string to an integer and collecting the results into a list.
+
+New Approach: We achieve the same result using the new Stream.toList() method, which is more concise and readable.
+
+Output: Both approaches produce the same output, demonstrating that the new method simplifies the code.
+
+--------------------------------------------------------------------------------------------------------------------
+*Pattern Matching for instanceof (JEP 394)*
+
+^Traditional Check^:
+The code checks if obj is an instance of String. If true, it casts obj to String using (String) obj to use String methods.
+
+^Pattern Matching Check^:
+                                                                                           The new syntax if (obj instanceof String str) checks the type and simultaneously binds obj to the variable str.
+                                                                                           This eliminates the need for a separate cast, making the code cleaner and less error-prone.

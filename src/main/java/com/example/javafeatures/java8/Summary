@@ -1,0 +1,43 @@
+*forEach() Method in Iterable Interface*
+
+Summary: The forEach() method is a default method in the Iterable interface that allows you to iterate over
+elements using a lambda expression. It provides a more concise and readable way to traverse collections.
+
+------------------------------------------------------------------------------------
+
+*Java Time API*
+
+Summary: The Java Time API (java.time package) was introduced to replace the older java.util.Date
+and java.util.Calendar classes.It provides a comprehensive and user-friendly approach to handling dates and times,
+supporting various operations like date manipulation and formatting.
+
+------------------------------------------------------------------------------------
+
+*Java Stream API*
+
+The Java Stream API, introduced in Java 8, allows for functional-style operations on collections of data.
+It provides a powerful way to process sequences of elements (like lists, sets, etc.) in a declarative manner.
+Streams support various operations, such as filtering, mapping, and reducing, enabling more concise and readable code.
+
+Key Features
+Laziness: Streams are computed lazily, meaning computations are deferred until necessary.
+Parallel Processing: Streams can be processed in parallel, taking advantage of multicore architectures.
+Functional Operations: Operations are expressed in a functional style, making code cleaner and more expressive.
+
+------------------------------------------------------------------------------------
+
+*Utility Methods in the Math Class (Java 8)*
+The Math class in Java provides various utility methods for performing basic numeric operations,
+including calculations for trigonometry, logarithms, exponentiation, and more.
+These methods are static, meaning they can be called without creating an instance of the Math class.
+
+Key Utility Methods
+Math.abs(x): Returns the absolute value of x.
+Math.max(a, b): Returns the greater of two values.
+Math.min(a, b): Returns the lesser of two values.
+Math.sqrt(x): Returns the square root of x.
+Math.pow(a, b): Returns a raised to the power of b
+------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------

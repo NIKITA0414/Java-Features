@@ -1,0 +1,27 @@
+1. String Class New Methods
+Java 12 introduced new methods to the String class, such as:
+
+isBlank(): Checks if the string is empty or consists only of whitespace.
+strip(): Removes leading and trailing whitespace.
+lines(): Returns a stream of lines from a string.
+stripLeading() / stripTrailing(): Removes leading or trailing whitespace, respectively.
+------------------------------------------------------------------------------------
+
+2. Teeing Collector
+The teeing collector allows you to merge the results of two collectors into a single result.
+ It enhances stream processing by efficiently collecting results in parallel.
+------------------------------------------------------------------------------------
+
+3. Compact Number Formatting
+The CompactNumberFormat class allows for formatting numbers in a compact and human-readable form, using
+abbreviations like "K" for thousands and "M" for millions, making it easier to display large numbers succinctly.
+------------------------------------------------------------------------------------
+
+4. Switch Expressions (Preview)
+Switch expressions provide a new way to use the switch statement that can return a value.
+This feature simplifies code by eliminating the need for break statements and allows for more concise syntax.
+------------------------------------------------------------------------------------
+
+5. Pattern Matching for instanceof (Preview)
+This feature simplifies type checking and casting by allowing you to test an object's type and
+cast it in a single operation, enhancing code readability and reducing boilerplate.

@@ -1,0 +1,10 @@
+Records in Java 16
+
+Records are a feature in Java (since JDK 16) for creating simple, immutable data classes.
+
+Key Points:
+
+Immutability: Once created, the values can't change.
+Concise Syntax: You define a record in one line, like record Point(double x, double y) {}.
+Automatic Methods: Records automatically provide methods for comparing (equals), generating hash codes (hashCode),
+ and converting to strings (toString).

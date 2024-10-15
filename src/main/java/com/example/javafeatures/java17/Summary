@@ -1,0 +1,43 @@
+Summary of JEP 356: Enhanced Pseudo-Random Number Generators
+JEP 356 introduces a new suite of pseudo-random number generator (PRNG) APIs in Java 17,
+enhancing the existing java.util.Random class. It includes:
+
+-New Interfaces: A RandomGenerator interface and several implementations,
+including RandomGeneratorFactory for creating instances.
+
+-More Algorithms: Support for additional algorithms beyond the classic linear congruential generator (LCG)
+ used in Random.
+
+-Customizable Generators: Easier configuration of PRNGs, allowing developers to select algorithms
+ and customize their behavior.
+
+-Improved Performance: Optimizations for better performance, especially in multithreaded scenarios.
+
+--------------------------------------------------------------------------------------------------------------------
+*Summary of JEP 406: Pattern Matching for Switch (Preview)*
+
+JEP 406 introduces pattern matching for the switch statement in Java as a preview feature.
+This enhancement allows developers to use more concise and readable syntax when working with multiple types
+in switch expressions. Key points include:
+
+-Pattern Matching: You can match specific types and their properties directly in switch cases.
+
+-Enhanced Readability: Reduces boilerplate code by eliminating the need for explicit type checks and casting.
+
+-Improved Type Safety: Compiler checks ensure that the types being matched are safe, minimizing runtime errors.
+
+-Sealed Types Support: Enables better handling of hierarchies and sealed types in switch expressions.
+--------------------------------------------------------------------------------------------------------------------
+
+* Always-Strict Floating-Point Semantics*
+
+-Purpose: The goal is to enforce strict compliance with IEEE 754 floating-point semantics,
+preventing optimizations that may alter the expected results of floating-point operations.
+
+-Behavior Changes: This setting affects how the JVM handles floating-point calculations, ensuring that:
+
+Rounding and precision are consistent across platforms.
+Results from floating-point operations are reproducible.
+
+Impact: Enforcing strict semantics can lead to slightly slower performance due to the overhead
+ of maintaining strictness, but it improves the reliability of floating-point computations.

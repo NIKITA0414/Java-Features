@@ -1,0 +1,54 @@
+*New String Methods*
+
+isBlank(): Checks if a string is empty or contains only whitespace.
+
+Example: str1.isBlank() // true
+lines(): Returns a stream of lines from a string.
+
+Example: str.lines().collect(Collectors.toList()) // ["Geeks", "For", "Geeks"]
+repeat(int): Returns a string repeated a specified number of times.
+
+Example: str.repeat(4) // "GeeksForGeeksGeeksForGeeksGeeksForGeeksGeeksForGeeks"
+stripLeading(): Removes whitespace from the start of a string.
+
+Example: str.stripLeading() // "GeeksForGeeks"
+stripTrailing(): Removes whitespace from the end of a string.
+
+Example: str.stripTrailing() // "GeeksForGeeks"
+strip(): Removes whitespace from both ends of a string.
+
+Example: str.strip() // "GeeksForGeeks"
+
+-----------------------------------------------------------------------------------
+*New File Methods*
+
+writeString(Path, String): Writes a string to a file.
+
+Example: Files.writeString(Path.of("example.txt"), "GeeksForGeeks!")
+readString(Path): Reads the content of a file as a string.
+
+Example: Files.readString(Path.of("example.txt")) // "GeeksForGeeks!"
+isSameFile(Path, Path): Checks if two paths refer to the same file.
+
+Example: Files.isSameFile(Path.of("example1.txt"), Path.of("example2.txt")) // false
+------------------------------------------------------------------------------------
+*Pattern Recognizing Methods*
+
+asMatchPredicate(): Creates a predicate from a regex pattern.
+Example: pattern.asMatchPredicate().test("aba") // true
+
+------------------------------------------------------------------------------------
+*Collection to an Array*
+
+-toArray(): Returns an array containing all elements of the collection as Object[].
+-toArray(T[] a): Returns an array containing all elements of the collection, and you can specify
+the type of the array.If the provided array is too small, a new array of the same type is created.
+
+------------------------------------------------------------------------------------
+*Not Predicate Method*
+The Predicate interface now has a not() method to simplify negating predicates.
+
+------------------------------------------------------------------------------------
+*Local-Variable Syntax for Lambda*
+
+Java 11 allows the use of var in lambda expressions for better readability and reduced verbosity.

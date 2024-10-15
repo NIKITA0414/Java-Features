@@ -1,0 +1,26 @@
+*Factory Methods for Immutable List, Set, Map and Map.Entry*
+
+Java 9 introduced factory methods for creating immutable collections directly, making it easier to create List,
+Set, and Map instances without needing to instantiate concrete classes. These methods return unmodifiable
+collections that cannot be altered after creation.
+
+Immutable List: Created using List.of(), it contains three fruit names and cannot be modified.
+Immutable Set: Created using Set.of(), it holds three color values, ensuring uniqueness.
+Immutable Map: Created with Map.of(), it contains key-value pairs representing numbers in words.
+Immutable Map.Entry: Created using Map.entry(), it represents a single key-value pair.
+
+--------------------------------------------------------------------------------------------------------------------
+
+*Diamond Operator for Anonymous Inner Classes (Java 9)*
+
+Summary: Java 9 introduced the ability to use the diamond operator (<>) with anonymous inner classes.
+This enhancement simplifies the syntax when creating instances of generic types, making the code
+cleaner and reducing redundancy.
+
+-Anonymous Inner Class: In the example, we create an instance of ArrayList using an anonymous inner class.
+The diamond operator (<>) allows us to omit the type parameters since they can be inferred from the context.
+-Instance Initialization Block: The instance initialization block (curly braces) is used to add elements to the
+ list at the time of its creation.
+-Type Inference: By using the diamond operator, the compiler infers that the list is of type ArrayList<String>,
+ reducing boilerplate code.
+

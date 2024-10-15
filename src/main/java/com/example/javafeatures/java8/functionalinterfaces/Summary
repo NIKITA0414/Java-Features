@@ -1,0 +1,9 @@
+*Functional Interfaces*
+
+Summary: A functional interface is an interface that contains exactly one abstract method.
+They can be used as the assignment target for lambda expressions, enabling a functional programming style in Java.
+Common examples include Runnable, Callable, and Comparator.
+
+Explanation
+Functional Interface: MyFunctionalInterface has one abstract method, performAction().
+Lambda Expression: We implement the interface using a lambda expression, providing a concise way to define the action.

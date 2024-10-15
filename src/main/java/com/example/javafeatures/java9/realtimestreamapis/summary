@@ -1,0 +1,14 @@
+Explanation
+
+-takeWhile: This method takes orders until it encounters one that does not meet
+the condition (total amount > 100). In this example, it will continue taking orders until it
+finds one that is not eligible.
+
+-dropWhile: This method drops orders while they meet the condition (total amount > 100).
+It stops dropping once it encounters an order that does not meet the condition.
+
+-ofNullable: Demonstrates how to handle nullable values elegantly.
+If the order is null, it creates an empty stream.
+
+-iterate with a Predicate: Generates a stream of integers from 1 to 10,
+demonstrating the new capability to specify a termination condition.

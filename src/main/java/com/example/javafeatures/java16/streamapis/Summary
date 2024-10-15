@@ -1,0 +1,9 @@
+Stream API introduced two significant features:
+
+.toList() Method: This method collects stream elements into an unmodifiable List, offering a convenient
+alternative to collect(Collectors.toUnmodifiableList()). It emphasizes potential future optimizations,
+ particularly for value-based lists.
+
+mapMulti Family of Methods: These methods allow you to push multiple elements to a consumer instead of returning
+a stream to be flattened. This is more efficient than using flatMap for situations where you expand a few elements.
+ Variants like mapMultiToInt, mapMultiToLong, and mapMultiToDouble facilitate working with primitive streams directly.

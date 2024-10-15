@@ -1,0 +1,10 @@
+1. Switch Expressions (JEP 354)
+Summary: Switch expressions enhance the traditional switch statement by allowing it to return a value.
+This feature simplifies code and eliminates the need for break statements, enabling more concise syntax.
+
+------------------------------------------------------------------------------------
+
+2. Text Blocks (JEP 355)
+Summary: Text blocks provide a new way to handle multi-line string literals in Java.
+ They allow for cleaner and more readable code when dealing with large strings, such as JSON or SQL queries,
+ by using triple quotes (""") to define the block.
